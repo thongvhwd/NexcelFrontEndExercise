@@ -1,0 +1,134 @@
+body {
+    margin: auto;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/********************************************************/
+
+
+/*                        Navbar                        */
+
+
+/********************************************************/
+
+nav {
+    border-bottom: 3px solid #cccccc;
+}
+
+#logo {
+    height: 65px;
+    width: 250px;
+    margin: auto;
+}
+
+#logo img {
+    box-sizing: border-box;
+    width: 100%;
+    vertical-align: -webkit-baseline-middle;
+}
+
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    max-width: 930px;
+    margin: auto;
+}
+
+.nav-bar li {
+    float: left;
+}
+
+.nav-bar li a {
+    box-sizing: border-box;
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    color: #737373;
+    line-height: 65px;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+}
+
+.nav-bar li a:not(#logo):not(#free-demo):hover {
+    background-color: #06a7e2;
+    color: white;
+}
+
+.nav-bar li.right {
+    float: right;
+}
+
+@media screen and (min-width: 1000px) {
+    .nav-bar li {
+        height: 65px;
+    }
+}
+
+#free-demo {
+    box-sizing: border-box;
+    background-color: #E73C50;
+    border-radius: 5px;
+    border-bottom: 2px solid #b5161e;
+    color: white;
+    padding: 0px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 45px;
+    margin-top: 10px;
+    width: 150px;
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-bar li.right,
+    .nav-bar li {
+        float: none;
+    }
+    .nav-bar li :not(.logo):not(#logo):not(#free-demo) {
+        border: 1px solid #737373;
+    }
+    .nav-bar li:nth-child(3) a {
+        border-top: 0px !important;
+        border-bottom: 0px !important;
+    }
+    .nav-bar li:nth-child(5) a {
+        border-top: 0px !important;
+        border-bottom: 0px !important;
+    }
+    .nav-bar li a {
+        line-height: 40px;
+    }
+    #logo {
+        margin-bottom: 20px;
+    }
+    #free-demo {
+        margin: 20px 0;
+        width: 100%;
+    }
+}
+
+
+/********************************************************/
+
+
+/*                        Content                       */
+
+
+/********************************************************/
+
+
+/********************************************************/
+
+
+/*                        Footer                        */
+
+
+/********************************************************/
