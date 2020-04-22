@@ -1,0 +1,178 @@
+body {
+    background-color: #76acfc;
+    color: white;
+    font-size: 13px;
+    font-family: Arial, 'Segoe UI', Tahoma;
+    max-width: 1280px;
+    margin: auto;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 1280px) {
+    body {
+        padding: 160px;
+    }
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.description {
+    line-height: 80px;
+    text-align: center;
+}
+
+.main {
+    max-width: 960px;
+    margin: auto;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 800px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.info-container {
+    max-width: 400px;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.phone {
+    float: left;
+    padding-right: 30px;
+}
+
+.email-link {
+    color: white;
+}
+
+.tel-link {
+    color: white;
+    text-decoration: none;
+}
+
+.material-icons {
+    vertical-align: text-bottom;
+    font-size: 16px !important;
+}
+
+.input {
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+    height: 40px;
+    margin: 5px;
+    padding: 15px;
+    width: calc(100% - 10px);
+}
+
+::placeholder {
+    color: #a6a6a6;
+}
+
+.message-container {
+    height: 160px;
+}
+
+.message {
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    height: 150px;
+    padding: 10px;
+    width: calc(100% - 10px);
+}
+
+.btn {
+    border-radius: 5px;
+    background: #64ce83;
+    border-color: #3dc264;
+    color: white;
+    float: right;
+    font-weight: bold;
+    margin: 5px;
+    height: 40px;
+    padding: 10px;
+    width: 120px;
+}
+
+.form-flex-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row
+}
+
+.form-flex-container>div:first-child {
+    width: 30%;
+}
+
+.form-flex-container>div:nth-child(2) {
+    width: 70%;
+}
+
+.input-flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1000px) {
+    .form-flex-container {
+        flex-direction: column
+    }
+    .input-flex-container {
+        width: 100%;
+    }
+    .form-flex-container>div:first-child {
+        width: 100%;
+    }
+    .form-flex-container>div:nth-child(2) {
+        width: 100%;
+    }
+    .input {
+        width: calc(100%);
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .message {
+        width: calc(100%);
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .btn {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.map {
+    display: block;
+    margin: 50px auto 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+}
