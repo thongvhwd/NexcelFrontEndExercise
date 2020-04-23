@@ -1,9 +1,6 @@
 body {
     margin: auto;
-    padding: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
@@ -17,10 +14,10 @@ body {
 
 nav {
     border-bottom: 3px solid #cccccc;
+    padding: 20px;
 }
 
 #logo {
-    height: 65px;
     width: 250px;
     margin: auto;
 }
@@ -36,7 +33,7 @@ nav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white;
+    background-color: #ffffff;
     max-width: 930px;
     margin: auto;
 }
@@ -59,35 +56,31 @@ nav {
 
 .nav-bar li a:not(#logo):not(#free-demo):hover {
     background-color: #06a7e2;
-    color: white;
+    color: #ffffff;
 }
 
 .nav-bar li.right {
     float: right;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 930px) {
     .nav-bar li {
         height: 65px;
     }
 }
 
 #free-demo {
-    box-sizing: border-box;
     background-color: #E73C50;
     border-radius: 5px;
     border-bottom: 2px solid #b5161e;
-    color: white;
-    padding: 0px 32px;
-    text-align: center;
-    text-decoration: none;
+    color: #ffffff;
     font-size: 16px;
     line-height: 45px;
     margin-top: 10px;
     width: 150px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 930px) {
     .nav-bar li.right,
     .nav-bar li {
         float: none;
@@ -124,6 +117,105 @@ nav {
 
 /********************************************************/
 
+main {
+    max-width: 930px;
+    margin: 47px auto 50px auto;
+    display: flex;
+    padding: 20px;
+}
+
+#main-introduction {
+    width: 310px;
+    border-bottom: 2px solid grey;
+}
+
+#main-content {
+    margin: 0 20px;
+    height: 250px;
+}
+
+#icd {
+    height: 142px;
+    width: inherit;
+    border-bottom: 4px solid #ffa933;
+}
+
+#time {
+    overflow: auto;
+}
+
+#time p {
+    color: #c98715;
+    font-size: 11px;
+}
+
+#time p:first-child {
+    float: left;
+}
+
+#time p:nth-child(2) {
+    float: right;
+}
+
+h1 {
+    color: #007299;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#brief {
+    color: #666666;
+    font-size: 14px;
+}
+
+#view-more {
+    color: #007299;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#featured-articles {
+    color: #007299;
+    font-size: 24px;
+    margin-left: 150px;
+}
+
+.content {
+    color: #4c4c4c;
+    font-size: 18px;
+}
+
+#read {
+    color: #007299;
+    font-weight: bold;
+    font-size: 12px;
+    float: left;
+    margin: auto;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+#read+img {
+    float: left;
+}
+
+@media screen and (max-width: 930px) {
+    main {
+        flex-direction: column;
+    }
+    #main-introduction {
+        width: 100%;
+        margin: auto;
+    }
+    #icd {
+        height: auto;
+    }
+    #featured-articles {
+        width: 100%;
+        margin: auto;
+    }
+}
+
 
 /********************************************************/
 
@@ -132,3 +224,75 @@ nav {
 
 
 /********************************************************/
+
+footer {
+    height: 150px;
+    background-color: #007299;
+    color: #ffffff;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 16px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+#footer-container {
+    display: flex;
+    max-width: 930px;
+    margin: 0 auto;
+    height: inherit;
+}
+
+.footer-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    width: 50%;
+}
+
+#email-input {
+    box-sizing: border-box;
+    height: 45px;
+    width: 285px;
+    font-weight: bold;
+    padding: 15px;
+    float: left;
+    border: 0;
+}
+
+#search-container form {
+    width: 360px;
+}
+
+#go-btn {
+    box-sizing: border-box;
+    height: 45px;
+    width: 75px;
+    font-weight: bold;
+    background-color: #06a7e2;
+    color: #ffffff;
+    border: 0;
+    float: left;
+}
+
+@media screen and (max-width: 780px) {
+    #footer-container {
+        flex-direction: column;
+    }
+    .footer-items {
+        width: 100%;
+        justify-content: start;
+    }
+    #search-container form {
+        width: 100%;
+    }
+    /*
+    75px is go-btn width
+    */
+    #email-input {
+        width: calc(100% - 75px);
+    }
+}
