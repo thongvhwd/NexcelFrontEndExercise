@@ -121,7 +121,7 @@ main {
     max-width: 930px;
     margin: 47px auto 50px auto;
     display: flex;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 #main-introduction {
@@ -229,7 +229,7 @@ footer {
     height: 150px;
     background-color: #007299;
     color: #ffffff;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 footer p {
